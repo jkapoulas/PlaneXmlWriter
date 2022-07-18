@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<CRRCSim_airplane version="2">
+  <name>
+    <en>Euclid</en>
+  </name>
+  <categories>
+    <category>Small UAV's</category>
+  </categories>
+  <description>
+    <en>
+A Rapid Deployment, Fixed Wind, Unmanned Aerial System (UAS), for Security Surveillance and Reconnaissance Applications</en>
+  </description>
+  <changelog>
+    
+  </changelog>
+  <aero version="1" units="1">
+    <ref chord="0.18" span="2.184" area="0.361" speed="15" />
+    <misc Alpha_0="0.029670597" eta_loc="0.3" CG_arm="0.25" span_eff="0.9" />
+    <m Cm_0="0" Cm_a="-0.92852" Cm_q="-15.118" Cm_de="-1.1277" />
+    <lift CL_0="0.4" CL_max="1.2" CL_min="-0.7" CL_a="5.719" CL_q="8.3723"
+       CL_de="0.34169" CL_drop="0.3" CL_CD0="0.4" />
+    <drag CD_prof="0.02" Uexp_CD="-0.5" CD_stall="0.2" CD_CLsq="0.01" CD_AIsq="0.01"
+       CD_ELsq="0" />
+    <Y CY_b="-0.29602" CY_p="-0.024153" CY_r="0.16565" CY_dr="0.14008"
+       CY_da="0.0050389" />
+    <l Cl_b="-0.046436" Cl_p="-0.57489" Cl_r="0.10239" Cl_dr="-0.0014484"
+       Cl_da="0.22204" />
+    <n Cn_b="0.066446" Cn_p="-0.072139" Cn_r="-0.040404" Cn_dr="-0.04323"
+       Cn_da="0.0018293" />
+    <flaps drag="0.003" lift="0.2" moment="-0.5" />
+  </aero>
+  <config version="1">
+    <descr_long>
+      <en>Euclid</en>
+    </descr_long>
+    <descr_short>
+      <en>Euclid</en>
+    </descr_short>
+	
+    <mass_inertia version="1" units="1" Mass="2.059" I_xx="0.1376"
+       I_yy="0.1183" I_zz="0.2504" I_xz="0.00214" />
+    <sound version="1">
+      <sample filename="electric.wav" type="1" pitchfactor="0.002" maxvolume="1" />
+    </sound>
+    <power units="1">
+      <automagic F="5" V="15">
+        <battery throttle_min="0.2">
+          <automagic T="1800" />
+          <shaft J="0" brake="0">
+            <propeller D="0.2032" H="0.1524" J="0" n_fold="-1" />
+            <engine>
+              <automagic omega_p="2827" eta_opt="0.78" eta="0.7" />
+            </engine>
+          </shaft>
+        </battery>
+      </automagic>
+    </power>
+  </config>
+  <graphics version="1" model="Euclid.ac">
+    <descr_long>
+      <en>Euclid</en>
+    </descr_long>
+    <descr_short>
+      <en>Euclid</en>
+    </descr_short>
+  </graphics>
+  
+  <wheels version="1" units="0">
+        <!-- nose wheel -->
+    <wheel percent_brake="0.25" caster_angle_rad="0">
+      <pos x="0.41677001" y="0" z="0.52499998" animation="nose_gear" />
+      <spring constant="65" damping="0.25" max_force="15.000" />
+      <steering mapping="RUDDER" max_angle="-0.349" />
+    </wheel>
+    <!-- left wheel -->
+    <wheel percent_brake="0.25" caster_angle_rad="0">
+      <pos x="-0.083300002" y="-0.667" z="0.5" animation="left_gear" />
+      <spring constant="65" damping="0.25" max_force="15.000" />
+    </wheel>
+    <!-- right wheel -->
+    <wheel percent_brake="0.25" caster_angle_rad="0">
+      <pos x="-0.083300002" y="0.667" z="0.5" animation="right_gear" />
+      <spring constant="65" damping="0.25" max_force="15.000" />
+    </wheel>
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="-0.083300002" y="0" z="-0.25" />
+      <spring constant="65" damping="0.25" max_force="5.000" />
+    </wheel>
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="-0.41659999" y="0" z="0.25" />
+      <spring constant="65" damping="0.25" max_force="5.000" />
+    </wheel>
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="-2.1659999" y="0" z="0" />
+      <spring constant="65" damping="0.25" max_force="5.000" />
+    </wheel>
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="-1.875" y="0.66659999" z="0" />
+      <spring constant="65" damping="0.25" max_force="5.000" />
+    </wheel>
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="-1.875" y="-0.66659999" z="0" />
+      <spring constant="65" damping="0.25" max_force="5.000" />
+    </wheel>
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="-2.1666" y="0.66659999" z="0" />
+      <spring constant="65" damping="0.25" max_force="5.000" />
+    </wheel>
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="-2.1666" y="-0.66659999" z="0" />
+      <spring constant="65" damping="0.25" max_force="5.000" />
+    </wheel>
+    <!-- nose behind spinner -->
+    <wheel percent_brake="0.5" caster_angle_rad="0">
+      <pos x="0.67" y="0.0" z="0.09" />
+      <spring constant="65" damping="0.25" max_force="0.1" />
+    </wheel>
+  </wheels>
+  <animations>
+   
+    <animation type="ControlSurface">
+      <!-- left aileron -->
+      <object name="Aileron(L)" max_angle="0.45" />
+      <control mapping="AILERON" gain="1.0" />
+      <hinge x="-0.09" y="-0.94" z="-0.055" />
+      <hinge x="-0.09" y="-0.52" z="-0.055" />
+    </animation>
+    <animation type="ControlSurface">
+      <!-- right aileron -->
+      <object name="Aileron(R)" max_angle="0.45" />
+      <control mapping="AILERON" gain="1.0" />
+      <hinge x="-0.09" y="0.94" z="-0.055" />
+      <hinge x="-0.09" y="0.52" z="-0.055" />
+    </animation>
+    <animation type="ControlSurface">
+      <!-- rudder -->
+      <object name="Rudder" max_angle="0.5" />
+      <control mapping="RUDDER" gain="1.0" />
+      <hinge x="-0.688" y="0" z="-0.14" />
+      <hinge x="-0.688" y="0" z="-0.031" />
+    </animation>
+    <animation type="ControlSurface">
+      <!-- elevator (L)-->
+      <object name="Elevator(L)" max_angle="0.4" />
+      <control mapping="ELEVATOR" gain="1.0" />
+      <hinge x="-0.664" y="-0.273" z="0.04" />
+      <hinge x="-0.664" y="-0.055" z="0.04" />
+    </animation>
+	<animation type="ControlSurface">
+      <!-- elevator (R)-->
+      <object name="Elevator(R)" max_angle="0.4" />
+      <control mapping="ELEVATOR" gain="1.0" />
+	  <hinge x="-0.664" y="0.055" z="0.04" />
+      <hinge x="-0.664" y="0.273" z="0.04" />
+    </animation>
+	<animation type="ControlSurface">
+      <!-- flap (L)-->
+      <object name="Flap(L)" max_angle="0.4" />
+      <control mapping="FLAP" gain="1.0" />
+	  <hinge x="-0.086" y="-0.5" z="-0.055" />
+      <hinge x="-0.086" y="-0.07" z="-0.055" />
+    </animation>
+	<animation type="ControlSurface">
+      <!-- flap (R)-->
+      <object name="Flap(R)" max_angle="0.4" />
+      <control mapping="FLAP" gain="1.0" />
+	  <hinge x="-0.086" y="0.07" z="-0.055" />
+	  <hinge x="-0.086" y="0.5" z="-0.055" />
+    </animation>
+  </animations>
+  <launch>
+    <preset name_en="ground launch" altitude="6" velocity_rel="36.8" angle="0.262" sal="0" rel_to_player="1" rel_front="0" rel_right="0" />
+  </launch>
+</CRRCSim_airplane>
