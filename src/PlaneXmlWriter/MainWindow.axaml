@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:vms="using:PlaneXmlWriter"
         mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="auto"
-        x:Class="PlaneXmlWriter.MainWindow2"
+        x:Class="PlaneXmlWriter.MainWindow"
         Title="PlaneXmlWriter">
 	<Control.DataContext>
 		<vms:XmlFileAccess/>

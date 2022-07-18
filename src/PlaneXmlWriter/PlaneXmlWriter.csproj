@@ -26,7 +26,7 @@
     <PackageReference Include="XamlNameReferenceGenerator" Version="1.3.4" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="MainWindow2.axaml.cs">
+    <Compile Update="MainWindow.axaml.cs">
       <DependentUpon>MainWindow2.axaml</DependentUpon>
     </Compile>
   </ItemGroup>

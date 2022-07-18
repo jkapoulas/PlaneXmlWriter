@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace PlaneXmlWriter
 {
-    public partial class MainWindow2 : Window
+    public partial class MainWindow : Window
     {
-        public MainWindow2()
+        public MainWindow()
         {
             var dataGridType = typeof(DataGrid); // HACK
             InitializeComponent();
